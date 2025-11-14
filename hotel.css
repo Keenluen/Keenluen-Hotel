@@ -1,0 +1,412 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  color: rgb(39, 39, 39);
+  font-size: 17px
+}
+.keenluen{
+  font-size: 30px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serifs;
+}
+#contact{
+  /* margin-left: 55rem; */
+  border-style: solid;
+  border-color: white;
+  padding: 5px 10px;
+  color: white;
+  transition: 0.5s;
+  display: inline-block;
+}
+#contact:hover{
+  background-color: white;
+  color: rgb(1, 199, 248);
+}
+#book{
+  border-style: solid;
+  border-color: white;
+  padding: 5px 20px;
+  color: white;
+  transition: 0.5s;
+  display: inline-block;
+}
+#book:hover{
+  background-color: white;
+  color: rgb(1, 199, 248);
+}
+#sign-in{
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: white;
+  padding: 5px 20px;
+  color: white;
+  transition: 0.5s;
+  display: inline-block;
+  border-radius: 25px;
+}
+#sign-in:hover{
+  background-color: white;
+  color: rgb(1, 199, 248);
+}
+#create-account{
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: white;
+  padding: 5px 20px;
+  color: white;
+  transition: 0.5s;
+  display: inline-block;
+  border-radius: 25px;
+}
+#create-account:hover{
+  background-color: white;
+  color: rgb(1, 199, 248);
+}
+#home{
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+#home:hover{
+  text-decoration: underline;
+  margin-left: 10px;
+  color: black;
+  padding-left: 10px;
+  border-style: solid;
+  border-color: rgb(61, 61, 61);
+}
+#about-us{
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+#about-us:hover{
+  text-decoration: underline;
+  margin-left: 10px;
+  color: black;
+  padding-left: 10px;
+  border-style: solid;
+  border-color: rgb(61, 61, 61);
+}
+#villas{
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+#villas:hover{
+  text-decoration: underline;
+  margin-left: 10px;
+  color: black;
+  padding-left: 10px;
+  border-style: solid;
+  border-color: rgb(61, 61, 61);
+}
+#offers{
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+#offers:hover{
+  text-decoration: underline;
+  margin-left: 10px;
+  color: black; 
+  padding-left: 10px;
+  border-style: solid;
+  border-color: rgb(61, 61, 61);
+}
+#honeymoons{
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+#honeymoons:hover{
+  text-decoration: underline;
+  margin-left: 10px;
+  color: black; 
+  padding-left: 10px;
+  border-style: solid;
+  border-color: rgb(61, 61, 61);
+}
+#inspiration{
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+#inspiration:hover{
+  text-decoration: underline;
+  margin-left: 10px;
+  color: black; 
+  padding-left: 10px;
+  border-style: solid;
+  border-color: rgb(61, 61, 61);
+}
+#destination{
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+#destination:hover{
+  text-decoration: underline;
+  margin-left: 10px;
+  color: black;  
+  padding-left: 10px;
+  border-style: solid;
+  border-color: rgb(61, 61, 61);
+}
+#family{
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+#family:hover{
+  text-decoration: underline;
+  margin-left: 10px;
+  color: black; 
+  padding-left: 10px;
+  border-style: solid;
+  border-color: rgb(61, 61, 61);
+}
+#gift-shop{
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+#gift-shop:hover{
+  text-decoration: underline;
+  margin-left: 10px;
+  color: black;
+  padding-left: 10px;
+  border-style: solid;
+  border-color: rgb(61, 61, 61);
+}
+#container{
+  font-size: 23px;
+  margin: 25px auto;
+}
+#btn{
+  border-style: solid;
+  border-color: rgb(1, 199, 248);
+  border-radius: 30px;
+  border-width: 2px;
+  transition: 0.5s;
+}
+#btn:hover{
+  background-color: rgb(1, 199, 248);
+  color: white;
+}
+#room{
+  transition: transform 1.5s ease-in-out;
+}
+#room:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+}
+#keenluen-casino{
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+}
+#read-more{
+  margin-top: 80px;
+  color: rgb(56, 56, 56);
+  transition: 0.2s;
+}
+#read-more:hover{
+  margin-left: 5px;
+  color: black;
+}
+#rooms{
+  transition: transform 2s ease-in-out;
+}
+#rooms:hover{
+  transform: scale(1.07);
+  cursor: pointer;
+}
+#accordion{
+  text-align: center;
+  background-color: rgb(230, 228, 228);
+}
+#alert{
+  background-color: rgb(66 66 66);
+  color: rgb(230, 228, 228);
+  border-radius: 0px;
+  position: fixed;
+  bottom: -17px;
+  z-index: 9;
+  width: 95%;
+  font-size: 13px;
+  text-align: center;
+}
+#whatsapp{
+  position: fixed;
+  bottom: 70px;
+  z-index: 10;
+}
+#footer-border{
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-color: rgb(1, 199, 248);
+  border-width: 0.5px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+#email-link{
+  color: white;
+  text-decoration: none;
+  transition: 0.15s;
+}
+#email-link:hover{
+  color: rgb(189, 188, 188);
+  /* opacity: 0.99; */
+  text-decoration: underline;
+}
+#subscribe-btn{
+  color: white;
+  border-style: solid;
+  border-color: rgb(1, 199, 248);;
+  border-radius: 0px;
+  font-size: 12px;
+  padding: 8px 70px;
+  transition: 0.5s;
+  margin-left: 20px;
+}
+#subscribe-btn:hover{
+  background-color: rgb(1, 199, 248);
+  border-color: rgb(1, 199, 248);
+}
+/* #content{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+} */
+/* #fb{
+  border-bottom-color: white;
+  border-bottom-radius: 100%;
+  border-style: solid;
+  display: inline;
+  font-size: 17px;
+  color: white;
+  padding: 10px 10px;
+} */
+ #social{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+ }
+ #position{
+  border-radius: 0px;
+  border-style: solid;
+  border-color: rgb(1, 199, 248);
+  display: inline-block;
+  padding: 5px 15px;
+  border-width: 1px;
+  transition: 0.5s;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: bold;
+ }
+ #position:hover{
+  /* font-size: 22px; */
+  background-color: rgb(1, 199, 248);
+ }
+ #position-link{
+  color: white;
+  text-decoration: none;
+ }
+#firstname{
+  margin-left: 5px;
+}
+#checkbox{
+  color: white;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#subscribe-me{
+  padding: 2px 20px;
+  margin: 60px 75px 0;
+  background-color: transparent;
+  color: white;
+  border-style: solid;
+  border-color: rgb(1, 199, 248);
+  border-width: 1px;
+  transition: 0.5s;
+}
+#subscribe-me:hover{
+  background-color: rgb(1, 199, 248);
+}
+#grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+  width: 250px;
+  margin-left: 20px;
+  border-bottom-style: solid;
+  border-width: 1.5px;
+  border-color:  rgb(1, 199, 248);
+  padding: 0 30px;
+  padding-bottom: 15px; 
+}
+#facebook{
+  width: 24.5px;
+ /* margin-left: 20px;
+  margin-top: -19.8px; */
+  transition: 0.3s;
+}
+#facebook:hover{
+  margin-top: -15px;
+  width: 27px;
+}
+#twitter{
+  width: 30px;
+  /* margin-left: 8px;
+  margin-top: -20px; */
+  transition: 0.3s;
+}
+#twitter:hover{
+  margin-top: -15px;
+  width: 35px;
+}
+#instagram{
+  width: 30px;
+  border-radius: 5px;
+  /* margin-left: 8px;
+  margin-top: -20px; */
+  transition: 0.3s;
+}
+#instagram:hover{
+  margin-top: -15px;
+  width: 35px;
+}
+#in{
+  width: 30px;
+  /* margin-left: 8px;
+  margin-top: -20px; */
+  transition: 0.3s;
+}
+#in:hover{
+  margin-top: -15px;
+  width: 35px;
+}
+#copy{
+  background-color: white;
+  color: rgb(31, 30, 30);
+  font-size: 17px;
+  padding: 8px 20px;
+  font-weight: 600;
+}
+#top{
+  position: fixed;
+  bottom: 20px;
+  z-index: 10;
+}

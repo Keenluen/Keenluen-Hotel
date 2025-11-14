@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keenluen Hotel</title>
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg sticky-top" style="background-color:rgb(1, 199, 248); padding: 20px;">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex justify-content-between" href="#"><strong class="keenluen">Keenluen Hotel</strong></a>
+        <button class="navbar-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: rgb(51, 51, 51); border-width: 3px;">
+            <span class="navbar-light navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-end text-end">
+                <li class="nav-item  justify-content-end"><a class="nav-link" href=""><div id="contact"><strong>Contact</strong></div></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><div id="book"><strong>Book Online</strong></div></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><div id="sign-in"><strong>Sign in</strong></div></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><div id="create-account"><strong>Create account</strong></div></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="alert alert-dismissible fade show" role="alert" id="alert">
+  We use cookies to ensure that we give you the best experience on our website. If you continue to use the site we will assume you're happy with it. 
+  <div class="btn btn-info" data-bs-dismiss="alert">OK</div>
+  <div class="btn btn-info">Our Privacy Policy</div>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style="padding-bottom: 38px;"></button>
+</div>
+
+<div class="container-fluid text-end" style="margin-left: -50px;"><a href=""><img src="../Image/whatsapp_PNG2.png" alt="" id="whatsapp"></a>
+  <a href="#" id="top"><img src="../Image/Top arrow.png" alt="" style="width: 50px; border-radius: 10px;"></a>
+</div>
+<!-- <div class="messenger-button-shown default button icon" id="messenger"></div> -->
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" style="border-width: 3px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">MySite</a> -->
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-start" id="offcanvasNavbar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" style="font-size: 30px;">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item" id="home"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item" id="about-us"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item" id="villas"><a class="nav-link" href="#">Villas</a></li>
+            <li class="nav-item" id="offers"><a class="nav-link" href="#">Offers</a></li>
+            <li class="nav-item" id="honeymoons"><a class="nav-link" href="#">Honeymons</a></li>
+            <li class="nav-item" id="inspiration"><a class="nav-link" href="#">Inpiration</a></li>
+            <li class="nav-item" id="destination"><a class="nav-link" href="#">Destiations</a></li>
+            <li class="nav-item" id="family"><a class="nav-link" href="#">Family</a></li>
+            <li class="nav-item" id="gift-shop"><a class="nav-link" href="#">Gift shop</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../Image/19d2a41216579687b8273cd043a30050.jpg" class="d-block w-100" alt="Slide 1" style="width: 100%; height: 25rem; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>First Slide</h5>
+        <p>Description for first slide.</p> -->
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../Image/Hotel Interior 3.jpg" class="d-block w-100" alt="Slide 2" style="width: 100%; height: 25rem; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Second Slide</h5>
+        <p>Description for second slide.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../Image/Hotel Exterior 5.jpg" class="d-block w-100" alt="Slide 3" style="width: 100%; height: 25rem; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Third Slide</h5>
+        <p>Description for third slide.</p> -->
+      </div>
+    </div>
+  
+  <div class="carousel-item">
+      <img src="../Image/c913d336.webp" class="d-block w-100" alt="Slide 2" style="width: 100%; height: 25rem; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Second Slide</h5>
+        <p>Description for second slide.</p> -->
+      </div>
+  </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+      </button>
+</div>
+<!-- <p>lorem10000</p> -->
+ <div class="container text-center" id="container">keenluen Hotel is a hotel located in the center of Lagos state, in Nigeria. 
+  With a minimalist and elegant Mediterranean style, this completely renovated historic building has spacious and bright
+  rooms and common areas designed for your comfort such as the social lounge or the rooftop terrace.</div>
+
+  <div class="container text-center mb-4"><h1>Rooms</h1></div>
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3 card">
+          <img src="../Image/Room 1.jpg" class="card-img-top" alt="Our Rooms" id="room">
+        <div class="card-body">
+          <h3>Double Economy</h3>
+          <p>Max, 2 people 1 double bed (135cm)</p>
+          <a href="" class="btn" id="btn">View Room</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 card">
+        <img src="../Image/Room 4.jpg" class="card-img-top" alt="Our Rooms" id="room">
+        <div class="card-body">
+          <h3>Couples Room</h3>
+          <p>Max 2 people 1 double bed (120cm)</p>
+          <a href="" class="btn" id="btn">View Room</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 card">
+        <img src="../Image/Room 3.jpg" class="card-img-top" alt="Our Rooms" style="height: 13rem;" id="room">
+        <div class="card-body">
+          <h3>D Superior Room</h3>
+          <p>Max 2 people 1 double bed</p>
+          <a href="" class="btn" id="btn">View Room</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 card">
+        <img src="../Image/Room 2.jpg" class="card-img-top" alt="Our Rooms" style="height: 13rem;" id="room">
+        <div class="card-body">
+          <h3>Twin Room</h3>
+          <p>Max 1 persom each, 2 beds</p>
+          <a href="" class="btn" id="btn">View Room</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" style=" background-color: rgb(224, 224, 224);">
+    <div class="container text-center p-4" ><h1 class="display-5">Top reasons to stay at <br>Keenluen Hotel</h1></div>
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <img src="../Image/Hotel Image.jpg" alt="" id="rooms" style="width: 35rem; height: 25rem; object-fit: cover;">
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6 p-5" style="margin-top: 20px;">
+        <p><strong><a href="" id="keenluen-casino">Keenluen Hotel casino</a></strong></p>
+        <h1 class="display-5">Spin the wheel in <br>sophisticated style</h1>
+        <p>Keenluen Hotel is open 24 hours a day, 7 days a week</p>
+        <a href="" id="read-more">READ MORE</a>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <p style="padding-top: 70px;"><strong>EXCLUSIVE DINNG FACILITIES AND DELICIOUS <br> LOCAL AND INTERNATIONAL CUISINE</strong></p>
+          <h1 class="display-5">Victoria Island <br>Restaurants</h1>
+          <p>KeenluenHotel offer you a culinary adventure with <br>traditional crusine.</p>
+          <a href="" id="read-more">READ MORE</a>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <img src="../Image/Hotel Image 2.jpg" alt="" id="rooms" style="width: 35rem; height: 25rem; object-fit: cover;">
+        </div>
+      </div>
+      <div class="row pt-5">
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <img src="../Image/Hotel Image 3.jpg" alt="" id="rooms" style="width: 35rem; height: 25rem; object-fit: cover;">
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 70px;">
+        <p><strong>ACCESS TO THE POOL CLUB, GYM AND TENNIS <br>COURTS</strong></p>
+        <h1 class="display-5">Pool Club in Lagos</h1>
+        <p>soak up the sun and enjoy the many activities and <br>facilities available at the Keenluenn Hotel's exclusive Pool <br>Club on NIgeria's Victoria Island.</p>
+        <a href="" id="read-more">READ MORE</a>
+        </div>
+      </div>
+      <div class="row pt-5" style="padding-bottom: 50px;">
+        <div class="col-sm-12 col-md-12 col-lg-6" style="padding: 20px;">
+          <strong>WITH ELEVEN ELEGANT CONFERENCE AND <br>MEETING ROOMS TO CHOOSE FROM </strong>
+          <h1 class="display-5">Keenluen Hotel has one of the best conference venue in Lagos</h1>
+          <p>A selection of conference and meeting rooms and <br>access to the Business Center offering general <br>secreterial services.</p>
+          <a href="" id="read-more">READ MORE</a>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <img src="../Image/Hotel image 4.jpg" alt="" id="rooms" style="width: 35rem; height: 25rem; object-fit: cover;">
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center" style="margin-top: 100px; margin-bottom: 100px;">
+      <h1 class="display-6">Keenluen Hotel Located in lagos</h1>
+      <p style="font-size: 20px;">The rooms at <strong>Keenluen Hotel</strong> in Lagos Nigeria are very comfortable and have flat screen TV, aie conditioning, heating, private bathroom with shower and hairdryer. 
+        Remember that the internet connection is free throughout the hotel! <br><br> Can you imagine spending a vacation in Lagos, staying in a typical Lagos house? There is no better way to 
+        understand the culture of this Lagos city, whose border is the immensity of the sea. In addition, you can get the best price thanks to our CEO at <strong>Keenluen Hotel</strong>.
+      </p>
+    </div>
+    <!-- <div class="accordion container-fluid" id="accordion"><h1 class="display-5" style="padding: 30px;">Frequently Asked Questions (FAQs) </h1>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        What type of room can I book at Keenluen Hotel?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body" style="text-align: start;">
+        The room options at Keenluen Hotel are:
+        <ul>
+          <li>Double</li>
+          <li>Single</li>
+          <li>Twin (2 beds)</li>
+          <li>Couples</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        What arae the check-out and check-in times at Keenluen Hotel
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body" style="text-align: start;">
+        You can check-in at Keenluen Hotel from 14:00 onward, and check-out is until 12:00
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        What arae the check-out and check-in times at Keenluen Hotel
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body" style="text-align: start;">
+        You can check-in at Keenluen Hotel from 14:00 onward, and check-out is until 12:00
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="accordion" id="accordion" style="text-align: start;"><h1 class="display-5" style="padding: 30px; text-align: center;">Frequently Asked Questions (FAQs) </h1>
+  <div class="container" style= " padding-bottom: 100px;">
+  <div style=" box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.6);">
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 18px;">
+        What type of room can I book at Keenluen Hotel?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Double</li>
+          <li>Single</li>
+          <li>Twin (2 beds)</li>
+          <li>Couples</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-size: 18px;">
+        What are the check-out and check-in times at Keenluen Hotel
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+        You can check-in at Keenluen Hotel from 14:00 onward, and check-out is until 12:00.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-size: 18px;">
+        How far is Keenluen Hotel from the airport?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+        Keenluen Hotel is located 500 meters from the airport. All distances are calculated in a straight line, and the actual distance may vary.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour" style="font-size: 18px;">
+        Does Keenluen Hotel have private parking?
+      </button>
+    </h2>
+    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+        Yes, we have a parking facility less than 100 meters from the hotel. There is an additional charge of $15 per day for parking. There are also nearby free parking areas such as "Hostage" in the Devesa area.  
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive" style="font-size: 18px;">
+        Is it possible to to check in at the hotel 24 hours a day?
+      </button>
+    </h2>
+    <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+        If you wish to access the hotel for the first time outside of reception hours, our staffs wii provide you with codes for our automatic ckheck-in machine.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix" style="font-size: 18px;">
+        Do all rooms have air conditioning?
+      </button>
+    </h2>
+    <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+        Yes, all rooms have air conditioning and heating.  
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven" style="font-size: 18px;">
+        Is it possible to store bicycles at the hotel? 
+      </button>
+    </h2>
+    <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+        Unfortunately, Keenluen Hotel does not have a bycicle storage service. However, we have another hotel less than 100 meters away (Keenluen Hotel) where you can store your bikes.  
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight" style="font-size: 18px;">
+        Does Keenluen Hotel accepts pet?
+      </button>
+    </h2>
+    <div id="collapseeight" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+       No, we do not accepts pet at Keenluen Hotel.  
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine" style="font-size: 18px;">
+        Are there any rooms with balcony?
+      </button>
+    </h2>
+    <div id="collapsenine" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+        Yes, there are a lot of rooms with balcony here at Keenluen Hotel with a great view of the sea.  
+      </div>
+    </div>
+  </div>
+  <!-- <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+        Does Keenluen Hotel have private parking?
+      </button>
+    </h2>
+    <div id="collapseten" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+        Yes, we have a parking facility less than 100 meters from the hotel. There is an additional charge of $15 per day for parking. There are also nearby free parking areas such as "Hostage" in the Devesa area.  
+      </div>
+    </div>
+  </div> -->
+  <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeleven" aria-expanded="false" aria-controls="collapseeleven" style="font-size: 18px;" >
+        Are the bathrooms in the rooms equiped with hygiene products?
+      </button>
+    </h2>
+    <div id="collapseeleven" class="accordion-collapse collapse" data-bs-parent="#accordion">
+      <div class="accordion-body">
+        Of course, all rooms at Keenluen Hotel are equiped with shower gel and shampoo, as well as toilet paper. Towels and haiedryer are also provided.  
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+<!--<div class="alert alert-primary" role="alert">
+   A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div> -->
+ <footer class="main-footer">
+  <div class="container-fluid" style="background-image: linear-gradient(180deg,#4c4a4a,#000); height: 95vh; color: #ffffff; font-size: 19px;">
+    <!-- <div class="container" style=" padding-top: 70px; background-color: #ffffff;"> -->
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3" id="footer-border">
+          <h4 style="padding-left: 20px;"><strong>E-MAILS:</strong></h4>
+          <span style="padding-left: 20px;">Reservations:</span>
+          <p style="padding-left: 20px;"><a href="" id="email-link">keenluen001@gmail.com</a></p>
+          <span style="padding-left: 20px;">Events:</span>
+          <p style="padding-left: 20px;"><a href="" id="email-link">Keenluen+1@gmail.com</a></p>
+          <span style="padding-left: 20px;">Sales:</span>
+          <p style="padding-left: 20px;"><a href="" id="email-link">drjerry637@gmail.com</a></p>
+          <span style="padding-left: 20px;">FIND US</span>
+          <p style="padding-left: 20px;">89B, Victoria Island Lagos State</p>
+          <p style="padding-top: 50px; padding-left: 20px;">EXCLUSIVE OFFERS:</p>
+          <div class="btn" id="subscribe-btn"><strong>SUBSCRIBE NEWSLETTER</strong></div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3" id="footer-border">
+          <div class="main-footer" id="content">
+            <h4 style="padding-left: 20px;">CAREERS</h4>
+            <span style="padding-left: 20px;">WE ARE HIRING!</span>
+            <P style="font-size: 15px; padding-left: 20px;">Do not miss the opportunity to become <br>a part of Keenluen Hotel team</P>
+            <div id="position"><a href="" id="position-link">Position</a></div>
+            <h4 style="margin-left: 20px; margin-top: 40px;">Hotel facilities</h4>
+            <ul style="margin-left: -10px; list-style: none; font-size: 16px;">
+              <li>Free Wifi</li>
+              <li>Free Breakfast</li>
+              <li>Boat Cruise Nearby</li>
+              <li>Night Club Nearby</li>
+              <li>Outdoor Pool</li>
+              <li>Wake up Call</li>
+              <li>Good Security</li>
+            </ul>
+            <!-- <div class="main-footer" id="social">
+              <a href="" style="color: white; text-decoration: none;">Keenluen Hotel</a>
+              <a href="https://www.facebook.com" target="_blank" class="main-footer_hash">
+                <i class="fab fa-facebook-square" id="fb">::before</i>
+                <img cl src="" alt=""></a> -->
+            </div>
+          </div>
+           <div class="col-sm-12 col-md-6 col-lg-3" id="footer-border">
+            <h4 style="margin-left: 5px;">ALWAYS FIRST</h4>
+            <p style="margin-left: 5px;">We'll keep posted about upcoming experiences and online exclusives.</p>
+            <form>
+              <!-- <div class="row mb-3">
+                <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+                 <div class="col-sm-10">
+                  <input type="text" class="form-control" id="firstName">
+                </div>
+                <div class="row mb-3">
+                  <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lastName">
+                </div>
+              </div> -->
+              <label for="firstname" id="firstname">FIRST NAME
+                <input type="text" name="firstname" style="width: 300px; padding-left: 10px;" required>
+              </label>
+              <label for="Lastname" id="firstname" style="margin-top: 20px;">LAST NAME
+                <input type="text" name="lastname" style="width: 300px; padding-left: 10px;" required>
+              </label>
+              <label for="email" id="firstname" style="margin-top: 20px;">EMAIL
+                <input type="text" name="email" style="width: 300px; padding-left: 10px;" required>
+              </label>
+              <input type="checkbox" required id="checkbox"><span style="font-size: 16px;"> I accepts the terms and conditions</span>
+              <input type="submit" value="Subscribe me" id="subscribe-me">
+            </form>
+           </div>
+           <div class="col-sm-12 col-md-6 col-lg-3" id="footer-border">
+            <h4 style="margin-left: 20px; margin-bottom: 18px;">IN BRIEF</h4>
+            <p style="line-height: 10px;"><a id="email-link" style="margin-left: 20px;" href="">MEETINGS & EVENTS</a><p>
+            <p style="line-height: 10px;"><a id="email-link" style="margin-left: 20px;" href="">ROOMS & SUITES</a><p>
+            <p style="line-height: 10px;"><a id="email-link" style="margin-left: 20px;" href="">RESTUARANTS & BARS</a><p>
+            <p style="line-height: 10px;"><a id="email-link" style="margin-left: 20px;" href="">SPA & WELLNESS</a><p>
+            <p style="line-height: 10px;"><a id="email-link" style="margin-left: 20px;" href="">LOCATION</a><p>
+            <p style="margin-left: 20px; margin-top: 50px;">FOLLOW US:</p>
+            <div id="grid">
+            <a href=""><img src="../Image/facebook icon.jpg" id="facebook" alt=""></a>
+            <a href=""><img src="../Image/X twitter icon.svg" id="twitter" alt=""></a>
+            <a href=""><img src="../Image/Instagram svg.jpg" id="instagram" alt=""></a>
+            <a href=""><img src="../Image/in image.png" id="in" alt=""></a>
+            </div>
+           </div>
+        </div>
+        <div class="container text-center" style="margin-top: 20px;">
+      <span id="copy">&copy 2025 Keenluen Hotel. Privacy policy</span>
+     </div>
+      </div>
+    <!-- </div> -->
+  </div>
+ </footer>
+ <div class="container-fluid text-end">
+  
+ </div>
+    
+
+  <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
